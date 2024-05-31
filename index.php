@@ -13,6 +13,9 @@ $movie2 = new Movie("PAZ", "Italy", "99", "1972");
 var_dump("$movie1");
 var_dump("$movie2");
 
+
+// richiamo la funzione setadults
+
 var_dump($movie1->setAdults("famiglia"));
 
 ?>

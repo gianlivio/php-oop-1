@@ -25,9 +25,8 @@ class Movie {
     // funzione setadults per inserire meccanismo di verifica parentalcontrol
 
     public function setAdults(string $adults_only){
-        if(in:array($parental_control, ["adults", "family"]))  {
-
-            $this->$parental_control = $parental_control;
+        if(in_array($parental_control, ["adults", "family"]))  {
+             $this-> parental_control = $parental_control;
 
         }
     }
