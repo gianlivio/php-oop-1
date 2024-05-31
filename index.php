@@ -1,21 +1,15 @@
 <?php
-
-// importo le classi
-
+// Importimo le classi
 require_once "Models/movie.php";
 
+//Creiamo prima istanza
 
-// Creo prima istanza salvandola in una variabile
+$movie1 = new Movie("Magic Mike", "Usa", "110","2012");
+$movie2 = new Movie("Io sto con gli Ippopotami","Usa","109","1979");
+$movie1->setAdults("maggiore di 16");
+var_dump($movie1);
+var_dump($movie2);
 
-$movie1 = new Movie("The Ring", "USA", "110", "1999");
-$movie2 = new Movie("PAZ", "Italy", "99", "1972");
-
-var_dump("$movie1");
-var_dump("$movie2");
-
-
-// richiamo la funzione setadults
-
-var_dump($movie1->setAdults("famiglia"));
+var_dump($movie1->setAdults("ciao"))
 
 ?>
