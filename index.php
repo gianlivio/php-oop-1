@@ -11,5 +11,8 @@ $movie1 = new Movie("The Ring", "USA", "110", "1999");
 $movie2 = new Movie("PAZ", "Italy", "99", "1972");
 
 var_dump("$movie1");
+var_dump("$movie2");
+
+var_dump($movie1->setAdults("famiglia"));
 
 ?>
