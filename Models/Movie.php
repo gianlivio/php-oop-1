@@ -22,6 +22,10 @@ class Movie {
         
     }
 
+    public function setAdults(string $adults_only){
+        if($adults_only === "true") 
+    }
+
 
 
 }
