@@ -19,8 +19,14 @@ class Movie {
         $this-> release_date = $release_date;    
     }
 
+
+    // Definisco un metodo pubblico chiamato setAdults che accetta un parametro di tipo stringa chiamato $parental_control.
     public function setAdults(string $parental_control){
+
+        // Verifico se il valore di $parental_control è uno dei valori all'interno dell'array ["adults", "famiglia", "maggiore di 16"].
         if(in_array($parental_control, ["adults", "famiglia","maggiore di 16"])) {
+
+            // Se $parental_control è uno di questi valori, allora imposto l'oggetto corrente (indicato da $this) svrà il valore di $parental_control passato come parametro.
            $this-> parental_control = $parental_control;
         }     
     }
